@@ -2,8 +2,11 @@ numpy
 pandas
 python-dotenv
 mysql-connector-python
-PyMySql
+pymysql
 scikit-learn
- 
+
+
+
+
 
 #-e .
