@@ -17,7 +17,7 @@ db=os.getenv('db')
 def read_sql_data():
     logging.info("Reading SQL Database started")
     try:
-        df=read_sql_data
+       # df=read_sql_data
         mydb=pymysql.connect(
             host=host,
             user=user,
@@ -28,7 +28,7 @@ def read_sql_data():
 
         df=pd.read_sql_query('Select * from students',mydb)
         print(df.head())
-
+        return df
 
     except Exception as ex:
         raise CustomException(ex)
